@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--mapper namespace填写接口类的完整路径-->
+<mapper namespace="com.chenzj36.mapper.UserMapper">
+
+    <!--id对应接口类中的方法名，resultType对应返回值中封装的基本类型-->
+    <select id="queryUserByName" resultType="User">
+    select * from mybatis.user where username=#{name}
+  </select>
+
+</mapper>

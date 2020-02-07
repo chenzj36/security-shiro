@@ -1,0 +1,3 @@
+# Project exclude paths
+/quickshiro/target/
+/shiro-springboot/target/
